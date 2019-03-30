@@ -1,0 +1,11 @@
+*{font-family: 'Montserrat', sans-serif;}
+/* FOOTER */
+#footer-default{padding: 1rem;}
+#footer-default small{font-size: .7rem;}
+#footer-default small strong{color: tomato;}
+/* Tablet*/
+@media (max-width: 1024px){}
+/* Mobile */
+@media (max-width: 812px) {}
+/*Navegador Mozilla*/
+@-moz-document url-prefix(){}

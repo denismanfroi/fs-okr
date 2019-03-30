@@ -1,0 +1,19 @@
+:root{
+	/*------------------------------------------------ Colors*/
+	--color-default: hsla(354, 70%, 66%, 1);
+	--color-default_hover: hsla(354, 70%, 56%, 1);
+	--color-green: hsla(155, 31%, 62%, 1);
+	--color-green_hover: hsla(155, 31%, 50%, 1);
+	/* Link */
+	--color-link: hsl(223, 64%, 63%); /* Blue Clear */
+	--color-link_hover: hsl(223, 68%, 52%); /* Blue Dark */
+	/* Selection */
+	--color-selection:;
+	--color-selection_bg:;
+	/* Caret */
+	--color-caret: hsl(13, 100%, 50%);
+	/* Galeria */
+	--color-dots_bg:;
+	/*------------- Link A*/
+	--text-decoration: none;
+}
