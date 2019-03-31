@@ -1,4 +1,38 @@
 *{font-family: 'Montserrat', sans-serif;}
+body{background-color: hsla(150, 80%, 76%, .2);}
+/* LISTAGEM DE OKR */
+.list-okr{}
+.list-okr li{
+    background-color: hsla(0, 0%, 0%, .8);
+    border-radius: 3px;
+    -webkit-box-shadow: 8px 8px 10px 0 hsla(0, 0%, 0%, .1);
+    box-shadow: 8px 8px 10px 0 hsla(0, 0%, 0%, .1);
+    color: hsla(0, 100%, 100%, .9);
+    padding: 1rem;
+    margin: 1rem;
+    min-width: 300px;
+}
+.list-okr li:nth-child(2n){background-color: hsla(0, 0%, 0%, .6);}
+.list-okr p.title-okr{
+    font-size: .8rem;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+}
+/* PROGRESS BAR */
+.progress-okr{
+    background-color: hsla(0, 100%, 100%, 0);
+    border-radius: 1px;
+    padding: .4rem;
+}
+.progress-okr .bar-progress{
+    background-color: hsl(150, 80%, 76%);
+    color: hsla(0, 100%, 100%, 1);
+    font-weight: 600;
+    padding: .2rem;
+    text-shadow: 1px 1px 0 hsla(0, 0%, 0%, .4);
+}
+.por50{background-color: hsl(44, 87%, 47%)!important;}
 /* FOOTER */
 #footer-default{padding: 1rem;}
 #footer-default small{font-size: .7rem;}
