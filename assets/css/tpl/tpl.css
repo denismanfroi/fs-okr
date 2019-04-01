@@ -32,16 +32,20 @@ body{background-color: hsla(150, 80%, 76%, .2);}
     padding: .2rem;
     text-shadow: 1px 1px 0 hsla(0, 0%, 0%, .4);
 }
-[data-color="verde"]{background-color: hsl(150, 80%, 76%);}
-[data-color="amarelo"]{background-color: hsl(44, 87%, 47%);}
-[data-color="laranja"]{background-color: hsl(32, 100%, 44%);}
-[data-color="vermelho"]{background-color: hsl(0, 100%, 44%);}
-.alert-box{
+[data-color="1"] {order:4;}
+[data-color="2"] {order:3;}
+[data-color="3"] {order:2;}
+[data-color="4"] {order:1;}
+
+[data-color="1"] .progress-okr .bar-progress{background-color: hsl(150, 80%, 76%);}
+[data-color="2"] .progress-okr .bar-progress{background-color: hsl(44, 87%, 47%);}
+[data-color="3"] .progress-okr .bar-progress{background-color: hsl(32, 100%, 44%);}
+[data-color="4"] .progress-okr .bar-progress{
     animation-name: color;
     animation-duration: 2s;
     animation-iteration-count: infinite;
-  }
-  
+    background-color: hsl(0, 100%, 44%);
+} 
   @keyframes color {
     0% {
       background-color: hsl(0, 100%, 44%);
