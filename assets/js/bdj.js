@@ -28,22 +28,6 @@ function getSessionStorage (key){return sessionStorage.getItem(key);}
 function removeSessionStorage (key){return sessionStorage.removeItem(key);}
 // Remove All Session Storage
 function removeAllSessionStorage (){return sessionStorage.clear();}
-// Notification
-function notifyMe(title, icon, body, link) {
-  if (Notification.permission !== "granted")
-      Notification.requestPermission();
-  else {
-    let notification = new Notification(title, {icon: icon, body: body,});
-    notification.addEventListener('click', () => {window.open(link);});
-  }
-};
-// Fechar com a tecla ESQ
-function esqClose (target, classTarget = "close-default"){
-  window.addEventListener('keypress', (event) => {
-    let key = event.keyCode || event.which;
-    if(key === 27) {target.classList.add(classTarget)}
-  });
-};
 /*
 	Função para limitar o tamanho do container.
  	Para limitar basta adiciona no elemento data-limit="VALOR";
@@ -98,30 +82,3 @@ function esqClose (target, classTarget = "close-default"){
 	let _currentYear = selectorsTarget("._current-year");
 	for(let i = 0; i < length(_currentYear); i++){_currentYear[i].innerText = newDate().getFullYear();}
 }());
-/*
-	Galeria
- 	Para funcionar deve adicionar essas duas classes abaixo
- 	owl-carousel owl-theme
- 	Página de exemplos https://owlcarousel2.github.io/OwlCarousel2/docs/api-options.html
- 	Exemplo de uso: Galeria pode ser usada para lista de clientes por ícones
-*/
-$('._gal-itens').owlCarousel({
-	autoplay: true,
-    loop:true,
-    items: 5,
-    lazyLoad:true,
-    margin:10,
-    dots: true,
-    nav: false,
-    // navText: ['<i class="fas fa-angle-left"></i>','<i class="fas fa-angle-right"></i>'],
-    animateIn: "fadeIn",
-    animateOut: "fadeOut",
-    responsive: {
-	    0 : {
-	    	items: 1,
-	    	margin:10
-	    },
-	    480 : {items: 2},
-	    768 : {itens: 4}
-	}
-});
