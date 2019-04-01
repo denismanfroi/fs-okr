@@ -36,6 +36,23 @@ body{background-color: hsla(150, 80%, 76%, .2);}
 [data-color="amarelo"]{background-color: hsl(44, 87%, 47%);}
 [data-color="laranja"]{background-color: hsl(32, 100%, 44%);}
 [data-color="vermelho"]{background-color: hsl(0, 100%, 44%);}
+.alert-box{
+    animation-name: color;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes color {
+    0% {
+      background-color: hsl(0, 100%, 44%);
+    }
+    50% {
+      background-color: hsla(0, 0%, 0%, .6);
+    }
+    100 {
+      background-color: hsl(0, 100%, 44%);
+    }
+  }
 /* FOOTER */
 #footer-default{padding: 1rem;}
 #footer-default small{font-size: .7rem;}
